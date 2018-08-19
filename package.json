@@ -1,0 +1,24 @@
+{
+  "name": "angular-node-seed",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-client && npm run build-server",
+    "build-client": "cd client && npm run build",
+    "build-server": "cd server && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently --kill-others \"npm run start-client\" \"npm run start-server\"",
+    "start-client": "cd client && npm start",
+    "start-server": "cd server && npm start"
+  },
+  "author": "Matias Delgado <matiasdel@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": "^10"
+  },
+  "dependencies": {
+    "concurrently": "^3.6.1",
+    "typescript": "^2.7.2"
+  }
+}
