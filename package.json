@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently --kill-others \"npm run start-client\" \"npm run start-server\"",
     "start-client": "cd client && npm start",
-    "start-server": "cd server && npm start"
+    "start-server": "cd server && npm start",
+    "lint": "tslint -c tslint.json 'server/**/*.ts' --exclude 'server/node_modules/**'"
   },
   "author": "Matias Delgado <matiasdel@gmail.com>",
   "license": "ISC",
@@ -18,7 +19,10 @@
     "node": "^10"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "concurrently": "^3.6.1",
+    "tslint": "^5.11.0",
     "typescript": "^2.7.2"
   }
 }
