@@ -30,6 +30,7 @@ yarn-error.log
 testem.log
 /typings
 stats.json
+.stylelintcache
 
 # e2e
 /e2e/*.js
